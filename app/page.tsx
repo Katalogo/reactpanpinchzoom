@@ -25,10 +25,10 @@ export default function Home() {
             zoomIn,
             zoomOut,
             centerView,
-            resetTransform,
-            zoomToElement,
-            setTransform,
-            instance,
+            // resetTransform,
+            // zoomToElement,
+            // setTransform,
+            // instance,
           }) => (
             <>
               <div className="absolute top-2 right-2 z-10 space-x-2 bg-slate-200 rounded-full px-6 py-2">
