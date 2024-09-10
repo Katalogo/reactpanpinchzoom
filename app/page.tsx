@@ -10,13 +10,13 @@ export default function Home() {
   return (
     <main>
       <div className="w-screen h-screen overflow-hidden bg-gray-100">
-        {/* <main className="w-screen h-screen overflow-hidden">
-      <div className="w-screen h-screen overflow-hidden bg-gray-100"> */}
+        {/* <main className="w-screen h-screen overflow-hidden"> */}
+        {/* <div className="w-screen h-screen overflow-hidden bg-gray-100"> */}
         <TransformWrapper
           initialScale={1}
-          // initialPositionX={screen.width / 2}
-          initialPositionY={screen.height / 4}
-          // centerOnInit={true}
+          // initialPositionX={screen.width / 2}    during build: "ReferenceError: screen is not defined"
+          // initialPositionY={screen.height / 4}   during build: "ReferenceError: screen is not defined"
+          centerOnInit={true}
           minScale={0.5}
           maxScale={5}
           limitToBounds={false}
