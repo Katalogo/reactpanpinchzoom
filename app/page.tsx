@@ -2,7 +2,7 @@
 import React from "react";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import { Card } from "@/components/ui/card";
-import { AlignCenter, ZoomInIcon, ZoomOutIcon } from "lucide-react";
+import { ZoomInIcon, ZoomOutIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ResetIcon } from "@radix-ui/react-icons";
 
@@ -46,20 +46,12 @@ export default function Home() {
                 >
                   <ZoomOutIcon className="h-4 w-4" />
                 </Button>
-                {/* <Button
-                  variant="secondary"
-                  size="icon"
-                  onClick={() => resetTransform()}
-                >
-                  <ResetIcon className="h-4 w-4" />
-                </Button> */}
                 <Button
                   variant="secondary"
                   size="icon"
                   onClick={() => centerView(1)}
                 >
                   <ResetIcon className="h-4 w-4" />
-                  {/* <AlignCenter className="h-4 w-4" /> */}
                 </Button>
               </div>
               <TransformComponent
